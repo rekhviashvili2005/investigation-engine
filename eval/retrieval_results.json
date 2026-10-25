@@ -1,0 +1,332 @@
+{
+  "dense": {
+    "recall@8": 0.937,
+    "mrr": 0.95,
+    "full_hit@8": 0.873,
+    "by_type_recall": {
+      "bridge": 0.926,
+      "comparison": 0.982
+    },
+    "failures": [
+      {
+        "id": "5a713ea95542994082a3e6e4",
+        "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+        "missing": [
+          "Indigenous peoples of Florida"
+        ]
+      },
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a77c1505542997042120b1b",
+        "question": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+        "missing": [
+          "We'll Burn That Bridge"
+        ]
+      },
+      {
+        "id": "5a7a230e5542996a35c170ee",
+        "question": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+        "missing": [
+          "The Fault in Our Stars (film)"
+        ]
+      },
+      {
+        "id": "5a84c4135542994c784dda31",
+        "question": "Are Yingkou and Fuding the same level of city?",
+        "missing": [
+          "Fuding"
+        ]
+      },
+      {
+        "id": "5a85fb085542994775f606de",
+        "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+        "missing": [
+          "Alien (film)"
+        ]
+      },
+      {
+        "id": "5a879adb5542996e4f30887f",
+        "question": "What other political position did the person who introduced the DISCLOSE Act hold?",
+        "missing": [
+          "Chris Van Hollen"
+        ]
+      },
+      {
+        "id": "5a8979f4554299669944a52e",
+        "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+        "missing": [
+          "Sela Ward"
+        ]
+      },
+      {
+        "id": "5a8c7595554299585d9e36b6",
+        "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+        "missing": [
+          "Shirley Temple"
+        ]
+      },
+      {
+        "id": "5a8e0a005542995085b373a1",
+        "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+        "missing": [
+          "Viglen"
+        ]
+      }
+    ]
+  },
+  "bm25": {
+    "recall@8": 0.597,
+    "mrr": 0.626,
+    "full_hit@8": 0.447,
+    "by_type_recall": {
+      "bridge": 0.57,
+      "comparison": 0.714
+    },
+    "failures": [
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a7332935542991f9a20c67d",
+        "question": "Which board game was published most recently, Pirate's Cove or Catan?",
+        "missing": [
+          "Catan"
+        ]
+      },
+      {
+        "id": "5a738d27554299623ed4abf3",
+        "question": "Who was born first, Erika Jayne or Marco Da Silva",
+        "missing": [
+          "Erika Jayne",
+          "Marco Da Silva (dancer)"
+        ]
+      },
+      {
+        "id": "5a74106b55429979e288289e",
+        "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+        "missing": [
+          "Tata Consultancy Services"
+        ]
+      },
+      {
+        "id": "5a7571135542992d0ec05f98",
+        "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+        "missing": [
+          "Columbia University"
+        ]
+      },
+      {
+        "id": "5a75e05c55429976ec32bc5f",
+        "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+        "missing": [
+          "Brown County, Kansas"
+        ]
+      },
+      {
+        "id": "5a75f0ea5542994ccc91866c",
+        "question": "What major truck road is located in Backford Cross?",
+        "missing": [
+          "A41 road"
+        ]
+      },
+      {
+        "id": "5a7625e8554299109176e66a",
+        "question": "In which year was the King who made the 1925 Birthday Honours born?",
+        "missing": [
+          "George V"
+        ]
+      },
+      {
+        "id": "5a77152355429966f1a36c2e",
+        "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+        "missing": [
+          "What Are Little Girls Made Of?"
+        ]
+      },
+      {
+        "id": "5a774e9c55429972597f14f3",
+        "question": "David Huntsinger has worked with this gospel singer born in the month of July?",
+        "missing": [
+          "David Huntsinger",
+          "Larnelle Harris"
+        ]
+      }
+    ]
+  },
+  "hybrid": {
+    "recall@8": 0.853,
+    "mrr": 0.736,
+    "full_hit@8": 0.747,
+    "by_type_recall": {
+      "bridge": 0.828,
+      "comparison": 0.964
+    },
+    "failures": [
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a7625e8554299109176e66a",
+        "question": "In which year was the King who made the 1925 Birthday Honours born?",
+        "missing": [
+          "George V"
+        ]
+      },
+      {
+        "id": "5a77152355429966f1a36c2e",
+        "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+        "missing": [
+          "What Are Little Girls Made Of?"
+        ]
+      },
+      {
+        "id": "5a77724455429972597f153e",
+        "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+        "missing": [
+          "Indianapolis Motor Speedway"
+        ]
+      },
+      {
+        "id": "5a77c1505542997042120b1b",
+        "question": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+        "missing": [
+          "Chattahoochee (song)",
+          "We'll Burn That Bridge"
+        ]
+      },
+      {
+        "id": "5a79311755429970f5fffe67",
+        "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+        "missing": [
+          "Masakazu Katsura"
+        ]
+      },
+      {
+        "id": "5a7a230e5542996a35c170ee",
+        "question": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+        "missing": [
+          "The Fault in Our Stars (film)"
+        ]
+      },
+      {
+        "id": "5a7c960655429935c91b5244",
+        "question": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+        "missing": [
+          "1974 Texas Tech Red Raiders football team",
+          "Texas Tech University"
+        ]
+      },
+      {
+        "id": "5a80071f5542992bc0c4a684",
+        "question": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+        "missing": [
+          "Tomb Raider (2013 video game)"
+        ]
+      },
+      {
+        "id": "5a84c4135542994c784dda31",
+        "question": "Are Yingkou and Fuding the same level of city?",
+        "missing": [
+          "Fuding"
+        ]
+      }
+    ]
+  },
+  "hybrid+rerank": {
+    "recall@8": 0.86,
+    "mrr": 0.735,
+    "full_hit@8": 0.76,
+    "by_type_recall": {
+      "bridge": 0.832,
+      "comparison": 0.982
+    },
+    "failures": [
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a77724455429972597f153e",
+        "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+        "missing": [
+          "Indianapolis Motor Speedway"
+        ]
+      },
+      {
+        "id": "5a77c1505542997042120b1b",
+        "question": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+        "missing": [
+          "Chattahoochee (song)",
+          "We'll Burn That Bridge"
+        ]
+      },
+      {
+        "id": "5a79311755429970f5fffe67",
+        "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+        "missing": [
+          "Masakazu Katsura"
+        ]
+      },
+      {
+        "id": "5a7a230e5542996a35c170ee",
+        "question": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+        "missing": [
+          "The Fault in Our Stars (film)"
+        ]
+      },
+      {
+        "id": "5a7c960655429935c91b5244",
+        "question": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+        "missing": [
+          "1974 Texas Tech Red Raiders football team",
+          "Texas Tech University"
+        ]
+      },
+      {
+        "id": "5a80071f5542992bc0c4a684",
+        "question": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+        "missing": [
+          "Tomb Raider (2013 video game)"
+        ]
+      },
+      {
+        "id": "5a85fb085542994775f606de",
+        "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+        "missing": [
+          "Alien (film)"
+        ]
+      },
+      {
+        "id": "5a8704f8554299211dda2ba4",
+        "question": "What is the name of the Isles who were led by Aonghus Mór and covered a total land area of over 8300 km2?",
+        "missing": [
+          "Kingdom of the Isles"
+        ]
+      },
+      {
+        "id": "5a879adb5542996e4f30887f",
+        "question": "What other political position did the person who introduced the DISCLOSE Act hold?",
+        "missing": [
+          "Chris Van Hollen"
+        ]
+      }
+    ]
+  }
+}
