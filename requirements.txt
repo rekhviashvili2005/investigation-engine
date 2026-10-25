@@ -11,3 +11,4 @@ python-dotenv
 streamlit
 pytest
 httpx
+google-genai
