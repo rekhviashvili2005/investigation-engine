@@ -26,3 +26,12 @@ CREATE INDEX IF NOT EXISTS chunks_embedding_idx
 
 CREATE INDEX IF NOT EXISTS chunks_tsv_idx
     ON chunks USING gin (tsv);
+
+CREATE TABLE IF NOT EXISTS eval_questions (
+    id           TEXT PRIMARY KEY,
+    question     TEXT NOT NULL,
+    answer       TEXT,
+    qtype        TEXT NOT NULL,       -- bridge | comparison | unanswerable | contradiction
+    supporting   JSONB NOT NULL DEFAULT '[]',   -- სწორი პარაგრაფების სათაურები
+    source       TEXT NOT NULL DEFAULT 'hotpotqa'
+);
