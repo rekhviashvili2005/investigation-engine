@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+psycopg[binary]
+pgvector
+fastembed
+datasets
+pypdf
+beautifulsoup4
+python-dotenv
+streamlit
+pytest
+httpx
