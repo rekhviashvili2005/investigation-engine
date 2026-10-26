@@ -1,0 +1,752 @@
+{
+  "dense": [
+    {
+      "id": "5abd259d55429924427fcf1a",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, both Dictyosperma and Huernia are described as a genus [1][5].",
+      "expected": "yes",
+      "cited": [
+        "Dictyosperma",
+        "Huernia"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5aba749055429901930fa7d8",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Chris Menges and Aram Avakian both share the occupation of being a film director [1][6].",
+      "expected": "director",
+      "cited": [
+        "Chris Menges",
+        "Aram Avakian"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8c5569554299240d9c2126",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, Daryl Hall is described as a singer, keyboardist, guitarist, songwriter, and producer [1], and Gerry Marsden is described as an English musician [6].",
+      "expected": "yes",
+      "cited": [
+        "Daryl Hall",
+        "Gerry Marsden"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ac2d1d755429921a00ab053",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Roberta Vinci had the best singles ranking, reaching a career-high of World No. 7 [1], whereas Jorge Lozano's highest singles ranking was World No. 51 [6].",
+      "expected": "Roberta Vinci",
+      "cited": [
+        "Roberta Vinci",
+        "Jorge Lozano"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ae4a3265542995ad6573de5",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Buck-Tick hails from Fujioka, Gunma, Japan [6].",
+      "expected": "Fujioka, Gunma",
+      "cited": [
+        "Buck-Tick"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5a8133725542995ce29dcbdb",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Robert Erskine Childers was from England (noted as English-born) [3], whereas Henry Roth was an American writer [1].",
+      "expected": "Robert Erskine Childers DSC",
+      "cited": [
+        "Henry Roth",
+        "Asgard (yacht)"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5a7cc50e554299452d57ba3e",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Letters to Cleo had more members (six members listed: Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and Tom Polce) [6], while Screaming Trees had four founding/core members (Mark Lanegan, Gary Lee Conner, Van Conner, and Mark Pickerel/Barrett Martin) [11][15].",
+      "expected": "Letters to Cleo",
+      "cited": [
+        "Letters to Cleo",
+        "Screaming Trees",
+        "Van Conner"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8db19d5542994ba4e3dd00",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, both Local H and For Against are from the United States [1][6].",
+      "expected": "yes",
+      "cited": [
+        "Local H",
+        "For Against"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ab51dae5542991779162d82",
+      "category": "simple",
+      "status": "answered",
+      "answer": "No, while Gerald R. Ford International Airport is located in Michigan [5], Elko Regional Airport is located in Nevada [1].",
+      "expected": "no",
+      "cited": [
+        "Elko Regional Airport",
+        "Gerald R. Ford International Airport"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, both Scott Derrickson and Ed Wood were American [1][6].",
+      "expected": "yes",
+      "cited": [
+        "Scott Derrickson",
+        "Ed Wood"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a879adb5542996e4f30887f",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The DISCLOSE Act was introduced in the U.S. House of Representatives by Chris Van Hollen [1], who has also served as a U.S. Senator from Maryland and as the U.S. Representative for Maryland's 8th congressional district [6]. It was also introduced in the U.S. Senate by Charles Schumer [1].",
+      "expected": "United States Senator",
+      "cited": [
+        "DISCLOSE Act",
+        "Chris Van Hollen"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a7d61775542991319bc93b9",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "Stapleton Cotton, 1st Viscount Combermere, who served as Commander-in-Chief of Ireland and Commander-in-Chief of India, contributed to the storming of the fortress at Bharatpur [2][6].",
+      "expected": "Lord Combermere",
+      "cited": [
+        "Siege of Bharatpur",
+        "Stapleton Cotton, 1st Viscount Combermere"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ac2ffbd554299677310267b",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "SuperMansion starred Jillian Bell [1], who had a recurring role as Jillian Belk on Workaholics [6].",
+      "expected": "Jillian Belk",
+      "cited": [
+        "SuperMansion",
+        "Jillian Bell"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8b20335542996c9b8d5fb3",
+      "category": "multi_hop",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": "shortest player ever to play in the National Basketball Association",
+      "cited": [],
+      "missing": "The provided evidence does not mention any former NBA player who played for the Charlotte Hornets during the 1992-93 season and served as the head coach for the Charlotte Sting.",
+      "correct": false,
+      "citation_acc": 0.0
+    },
+    {
+      "id": "5ab2a186554299295394677b",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The English local newspaper, the Reading Post, which featured the Maiwand Lion sculpture and war memorial in Forbury Gardens on its title page, changed its name in 2009 (having previously been known as the Reading Evening Post) [2].",
+      "expected": "2009",
+      "cited": [
+        "Reading Post"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5ac1c6805542994ab5c67e11",
+      "category": "multi_hop",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": "seasonal television specials, particularly its work in stop motion animation",
+      "cited": [],
+      "missing": "The provided evidence contains no information about The Year Without a Santa Claus, its production company, or the type of work for which the production company is best known.",
+      "correct": false,
+      "citation_acc": 0.0
+    },
+    {
+      "id": "5ac23ff0554299636651994d",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "\"Shut Up, Make Love\" is a song by Poison released in 2000 [1].",
+      "expected": "2000",
+      "cited": [
+        "Shut Up, Make Love"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5ab4e3065542990594ba9cb4",
+      "category": "multi_hop",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": "\"Teach the Controversy\" campaign",
+      "cited": [],
+      "missing": "The provided evidence contains no information about 'Truth in Science', 'Discovery', or any campaign they embrace.",
+      "correct": false,
+      "citation_acc": 0.0
+    },
+    {
+      "id": "5ae73c065542991e8301cc18",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The Eminem album that included vocals from Rihanna (whose album was titled \"Unapologetic\") is \"The Marshall Mathers LP 2\" (on the song \"The Monster\") [1][16].",
+      "expected": "\"The Marshall Mathers LP 2\"",
+      "cited": [
+        "Numb (Rihanna song)",
+        "The Monster (song)"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8704f8554299211dda2ba4",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The Isles were part of the Kingdom of the Isles [1][2] (also known as the Suðreyjar or Southern Isles [2], and sometimes referred to as the Kingdom of Mann and the Isles [2]). Aonghus Mór was a leading figure in the kingdoms of the Isles [1], and the islands comprising this kingdom cover a total land area of over 8300 km2 [2].",
+      "expected": "Kingdom of the Isles",
+      "cited": [
+        "Aonghus Mór",
+        "Kingdom of the Isles"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ae4627d5542991a06ce9a4d",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention the book 'Sexual Politics' or its author (Kate Millett) and which British University they attended.",
+      "abstained": true
+    },
+    {
+      "id": "5add61d65542995b365fab21",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence contains no information about a former Soviet statesman initiating a forum.",
+      "abstained": true
+    },
+    {
+      "id": "5ab69c25554299110f219a39",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about the American audio engineer and clandestine chemist who recorded the album 'Old and in the Way'.",
+      "abstained": true
+    },
+    {
+      "id": "5a87ab905542996e4f3088c1",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about the arena where the Lewiston Maineiacs played their home games or its seating capacity.",
+      "abstained": true
+    },
+    {
+      "id": "5a7571135542992d0ec05f98",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain any information about Ralph Hefferline or the university where he was a psychology professor.",
+      "abstained": true
+    },
+    {
+      "id": "5a828c8355429966c78a6a50",
+      "category": "unanswerable",
+      "status": "answered",
+      "answer": "Yes, Kaiser Ventures has roots tied to Kaiser Steel Corporation and the industrialist Henry J. Kaiser [1][8], who was an American industrialist known as the father of modern American shipbuilding.",
+      "expected": null,
+      "cited": [
+        "Kaiser Shipyards",
+        "Eagle Mountain Railroad"
+      ],
+      "missing": "",
+      "abstained": false
+    },
+    {
+      "id": "5a7d54165542995f4f402256",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence mentions Dirleton Castle as the seat of Lord Haliburton [3], and states that Dirleton lies between the Yellowcraigs nature reserve, Archerfield Estate and the Firth of Forth (north) [1], but it does not specify which coastal area the medieval fortress in Dirleton borders on the south side of.",
+      "abstained": true
+    },
+    {
+      "id": "5a8ef2a75542995a26add583",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about the book 'Seven Brief Lessons on Physics', its author, or whether the author is an Italian physicist who has worked in France.",
+      "abstained": true
+    },
+    {
+      "id": "5abd94525542992ac4f382d2",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention an album named '2014 S/S' or which South Korean boy group formed it.",
+      "abstained": true
+    },
+    {
+      "id": "5a86ebac55429960ec39b6d6",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention Handi-Snacks or the company that sells them.",
+      "abstained": true
+    }
+  ],
+  "hybrid 3:1": [
+    {
+      "id": "5abd259d55429924427fcf1a",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, both Dictyosperma and Huernia are described as a genus [1][4].",
+      "expected": "yes",
+      "cited": [
+        "Dictyosperma",
+        "Huernia"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5aba749055429901930fa7d8",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Chris Menges and Aram Avakian share the occupation of film director [1][6].",
+      "expected": "director",
+      "cited": [
+        "Chris Menges",
+        "Aram Avakian"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8c5569554299240d9c2126",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, Daryl Hall is described as a singer, keyboardist, guitarist, songwriter, and producer [1], and Gerry Marsden is described as an English musician [6].",
+      "expected": "yes",
+      "cited": [
+        "Daryl Hall",
+        "Gerry Marsden"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ac2d1d755429921a00ab053",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Roberta Vinci had the best singles ranking, reaching a career-high of World No. 7 [1], whereas Jorge Lozano's highest singles ranking was World No. 51 [6].",
+      "expected": "Roberta Vinci",
+      "cited": [
+        "Roberta Vinci",
+        "Jorge Lozano"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ae4a3265542995ad6573de5",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Buck-Tick hails from Fujioka, Gunma, Japan [6].",
+      "expected": "Fujioka, Gunma",
+      "cited": [
+        "Buck-Tick"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5a8133725542995ce29dcbdb",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Robert Erskine Childers was a British writer [7], whereas Henry Roth was an American novelist and short story writer [1].",
+      "expected": "Robert Erskine Childers DSC",
+      "cited": [
+        "Henry Roth",
+        "Robert Erskine Childers"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a7cc50e554299452d57ba3e",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Letters to Cleo had more members (6 members: Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and Tom Polce) [6] compared to Screaming Trees, which had 4 primary members mentioned (Mark Lanegan, Gary Lee Conner, Van Conner, and Mark Pickerel/Barrett Martin) [11].",
+      "expected": "Letters to Cleo",
+      "cited": [
+        "Letters to Cleo",
+        "Screaming Trees"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8db19d5542994ba4e3dd00",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, both Local H and For Against are from the United States. Local H is described as an American rock band formed in Zion, Illinois [1], and For Against is a post-punk/dream pop band from Lincoln, Nebraska, United States [4].",
+      "expected": "yes",
+      "cited": [
+        "Local H",
+        "For Against"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ab51dae5542991779162d82",
+      "category": "simple",
+      "status": "answered",
+      "answer": "No, while Gerald R. Ford International Airport is located in Michigan [5], Elko Regional Airport is located in Nevada [1].",
+      "expected": "no",
+      "cited": [
+        "Elko Regional Airport",
+        "Gerald R. Ford International Airport"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "category": "simple",
+      "status": "answered",
+      "answer": "Yes, Scott Derrickson is an American director [1] and Ed Wood was an American filmmaker [6], meaning they were of the same nationality.",
+      "expected": "yes",
+      "cited": [
+        "Scott Derrickson",
+        "Ed Wood"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a879adb5542996e4f30887f",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The DISCLOSE Act was introduced by Chris Van Hollen, who also served as the U.S. Representative for Maryland's 8th congressional district from 2003 to 2017, and later as the junior U.S. Senator from Maryland [1][6]. It was also introduced in the Senate by Charles Schumer [1].",
+      "expected": "United States Senator",
+      "cited": [
+        "DISCLOSE Act",
+        "Chris Van Hollen"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a7d61775542991319bc93b9",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "Stapleton Cotton, 1st Viscount Combermere, who served as Commander-in-Chief, Ireland and then Commander-in-Chief, India, contributed to the storming of the castle (fortress) at Bharatpur [2][4].",
+      "expected": "Lord Combermere",
+      "cited": [
+        "Siege of Bharatpur",
+        "Stapleton Cotton, 1st Viscount Combermere"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ac2ffbd554299677310267b",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "SuperMansion starred Jillian Bell [1], who had a recurring role as Jillian Belk on Workaholics [6].",
+      "expected": "Jillian Belk",
+      "cited": [
+        "SuperMansion",
+        "Jillian Bell"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8b20335542996c9b8d5fb3",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "Muggsy Bogues holds the distinction of being the shortest player ever to play in the National Basketball Association [5].",
+      "expected": "shortest player ever to play in the National Basketball Association",
+      "cited": [
+        "Muggsy Bogues"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5ab2a186554299295394677b",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The English local newspaper featuring the Maiwand Lion in Forbury Gardens changed its name in 2009, when it went from being called the Reading Evening Post to the Reading Post [2].",
+      "expected": "2009",
+      "cited": [
+        "Reading Post"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5ac1c6805542994ab5c67e11",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The production company for The Year Without a Santa Claus (Rankin/Bass Productions) is best known for its seasonal television specials, particularly its work in stop motion animation [7][9].",
+      "expected": "seasonal television specials, particularly its work in stop motion animation",
+      "cited": [
+        "The Year Without a Santa Claus",
+        "Rankin/Bass Productions"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ac23ff0554299636651994d",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "\"Shut Up, Make Love\" is a song by Poison released in 2000 [1].",
+      "expected": "2000",
+      "cited": [
+        "Shut Up, Make Love"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 0.5
+    },
+    {
+      "id": "5ab4e3065542990594ba9cb4",
+      "category": "multi_hop",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": "\"Teach the Controversy\" campaign",
+      "cited": [],
+      "missing": "The provided evidence does not contain any information about 'Truth in Science' or 'Discovery' or any campaign they embrace.",
+      "correct": false,
+      "citation_acc": 0.0
+    },
+    {
+      "id": "5ae73c065542991e8301cc18",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "The Eminem album that included vocals from Rihanna (who released the album \"Unapologetic\") is \"The Marshall Mathers LP 2\" [1][6].",
+      "expected": "\"The Marshall Mathers LP 2\"",
+      "cited": [
+        "Numb (Rihanna song)",
+        "The Monster (song)"
+      ],
+      "missing": "",
+      "correct": true,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5a8704f8554299211dda2ba4",
+      "category": "multi_hop",
+      "status": "answered",
+      "answer": "Aonghus Mór was a leading figure in the kingdoms of the Isles [1], which comprised the Hebrides, the islands of the Firth of Clyde and the Isle of Man, and were known to the Norse as the \"Suðreyjar\" or \"Southern Isles\" [2][3]. These islands covered a total land area of over 8300 km2 [2][3].",
+      "expected": "Kingdom of the Isles",
+      "cited": [
+        "Aonghus Mór",
+        "Kingdom of the Isles",
+        "List of rulers of the Kingdom of the Isles"
+      ],
+      "missing": "",
+      "correct": false,
+      "citation_acc": 1.0
+    },
+    {
+      "id": "5ae4627d5542991a06ce9a4d",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about the author of Sexual Politics or which British University they attended.",
+      "abstained": true
+    },
+    {
+      "id": "5add61d65542995b365fab21",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence mentions several Soviet statesmen (such as Anastas Mikoyan, Mikhail Suslov, Nikolai Podgorny, and Andrei Kirilenko), but does not contain any information about a forum initiated by any of them.",
+      "abstained": true
+    },
+    {
+      "id": "5ab69c25554299110f219a39",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about the American audio engineer and clandestine chemist who recorded the album 'Old and in the Way'.",
+      "abstained": true
+    },
+    {
+      "id": "5a87ab905542996e4f3088c1",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence mentions the Lewiston Maineiacs [2][4], but does not state the seating capacity of the arena where they played their home games.",
+      "abstained": true
+    },
+    {
+      "id": "5a7571135542992d0ec05f98",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not contain information about Ralph Hefferline or the university where he was a psychology professor.",
+      "abstained": true
+    },
+    {
+      "id": "5a828c8355429966c78a6a50",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention whether Henry J. Kaiser (or another industrialist associated with Kaiser Ventures) became known as 'the father of modern American shipbuilding', nor does it explicitly state that Henry J. Kaiser founded Kaiser Ventures corporation (though it links Kaiser Ventures to Kaiser Steel Corporation [6] and Henry J. Kaiser to Kaiser Shipbuilding Company [1]).",
+      "abstained": true
+    },
+    {
+      "id": "5a7d54165542995f4f402256",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence mentions Dirleton Castle as the seat of the Lord Haliburton of Dirleton [3], but it does not state what coastal area it borders on the south side of.",
+      "abstained": true
+    },
+    {
+      "id": "5a8ef2a75542995a26add583",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention 'Seven Brief Lessons on Physics', its author (Carlo Rovelli), or the year the author has worked in France.",
+      "abstained": true
+    },
+    {
+      "id": "5abd94525542992ac4f382d2",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention an album titled '2014 S/S' or the South Korean boy group that released it.",
+      "abstained": true
+    },
+    {
+      "id": "5a86ebac55429960ec39b6d6",
+      "category": "unanswerable",
+      "status": "insufficient_evidence",
+      "answer": "",
+      "expected": null,
+      "cited": [],
+      "missing": "The provided evidence does not mention Handi-Snacks or the American multinational company that sells them.",
+      "abstained": true
+    }
+  ]
+}
