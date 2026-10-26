@@ -68,7 +68,8 @@ def validate(raw: dict, store: EvidenceStore) -> AgentAnswer:
 
 
 def run_agent(conn: psycopg.Connection, question: str, llm: LLMClient | None = None,
-              max_steps: int = MAX_STEPS, mode: str = "hybrid", rerank: bool = True) -> AgentAnswer:
+              max_steps: int = MAX_STEPS, mode: str = "hybrid", rerank: bool = True,
+              exclude_titles: frozenset[str] | None = None) -> AgentAnswer:
     llm = llm or LLMClient()
     store = EvidenceStore()
     trace: list[dict] = []
@@ -87,7 +88,8 @@ def run_agent(conn: psycopg.Connection, question: str, llm: LLMClient | None = N
             messages.append(Message("model", r.text, raw=r.raw))
             results = []
             for call in r.tool_calls:
-                out = execute_tool(conn, store, call.name, call.args, mode=mode, rerank=rerank)
+                out = execute_tool(conn, store, call.name, call.args, mode=mode,
+                                   rerank=rerank, exclude_titles=exclude_titles)
                 trace.append({"step": "search", "query": call.args.get("query"),
                               "found": [x["id"] for x in out.get("results", [])]})
                 results.append((call.name, out))

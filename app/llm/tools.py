@@ -37,8 +37,10 @@ class EvidenceStore:
 
 
 def run_search(conn: psycopg.Connection, store: EvidenceStore, query: str,
-               k: int = 5, mode: str = "hybrid", rerank: bool = True) -> dict:
-    hits = hybrid_search(conn, query, k=k, mode=mode, rerank=rerank)
+               k: int = 5, mode: str = "hybrid", rerank: bool = True,
+               exclude_titles: frozenset[str] | None = None) -> dict:
+    hits = hybrid_search(conn, query, k=k, mode=mode, rerank=rerank,
+                         exclude_titles=exclude_titles)
     results = []
     for h in hits:
         n = store.add(h)
