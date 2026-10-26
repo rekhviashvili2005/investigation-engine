@@ -163,7 +163,7 @@
       }
     ]
   },
-  "hybrid": {
+  "hybrid 1:1": {
     "recall@8": 0.853,
     "mrr": 0.736,
     "full_hit@8": 0.747,
@@ -246,13 +246,13 @@
       }
     ]
   },
-  "hybrid+rerank": {
-    "recall@8": 0.86,
-    "mrr": 0.735,
-    "full_hit@8": 0.76,
+  "hybrid 2:1": {
+    "recall@8": 0.873,
+    "mrr": 0.76,
+    "full_hit@8": 0.78,
     "by_type_recall": {
-      "bridge": 0.832,
-      "comparison": 0.982
+      "bridge": 0.852,
+      "comparison": 0.964
     },
     "failures": [
       {
@@ -263,10 +263,10 @@
         ]
       },
       {
-        "id": "5a77724455429972597f153e",
-        "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+        "id": "5a7625e8554299109176e66a",
+        "question": "In which year was the King who made the 1925 Birthday Honours born?",
         "missing": [
-          "Indianapolis Motor Speedway"
+          "George V"
         ]
       },
       {
@@ -282,6 +282,165 @@
         "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
         "missing": [
           "Masakazu Katsura"
+        ]
+      },
+      {
+        "id": "5a7a230e5542996a35c170ee",
+        "question": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+        "missing": [
+          "The Fault in Our Stars (film)"
+        ]
+      },
+      {
+        "id": "5a7c960655429935c91b5244",
+        "question": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+        "missing": [
+          "1974 Texas Tech Red Raiders football team",
+          "Texas Tech University"
+        ]
+      },
+      {
+        "id": "5a80071f5542992bc0c4a684",
+        "question": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+        "missing": [
+          "Tomb Raider (2013 video game)"
+        ]
+      },
+      {
+        "id": "5a84c4135542994c784dda31",
+        "question": "Are Yingkou and Fuding the same level of city?",
+        "missing": [
+          "Fuding"
+        ]
+      },
+      {
+        "id": "5a85fb085542994775f606de",
+        "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+        "missing": [
+          "Alien (film)"
+        ]
+      },
+      {
+        "id": "5a879adb5542996e4f30887f",
+        "question": "What other political position did the person who introduced the DISCLOSE Act hold?",
+        "missing": [
+          "Chris Van Hollen"
+        ]
+      }
+    ]
+  },
+  "hybrid 3:1": {
+    "recall@8": 0.88,
+    "mrr": 0.788,
+    "full_hit@8": 0.793,
+    "by_type_recall": {
+      "bridge": 0.861,
+      "comparison": 0.964
+    },
+    "failures": [
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a77c1505542997042120b1b",
+        "question": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+        "missing": [
+          "Chattahoochee (song)",
+          "We'll Burn That Bridge"
+        ]
+      },
+      {
+        "id": "5a79311755429970f5fffe67",
+        "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+        "missing": [
+          "Masakazu Katsura"
+        ]
+      },
+      {
+        "id": "5a7a230e5542996a35c170ee",
+        "question": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+        "missing": [
+          "The Fault in Our Stars (film)"
+        ]
+      },
+      {
+        "id": "5a7c960655429935c91b5244",
+        "question": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+        "missing": [
+          "1974 Texas Tech Red Raiders football team",
+          "Texas Tech University"
+        ]
+      },
+      {
+        "id": "5a84c4135542994c784dda31",
+        "question": "Are Yingkou and Fuding the same level of city?",
+        "missing": [
+          "Fuding"
+        ]
+      },
+      {
+        "id": "5a85fb085542994775f606de",
+        "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+        "missing": [
+          "Alien (film)"
+        ]
+      },
+      {
+        "id": "5a879adb5542996e4f30887f",
+        "question": "What other political position did the person who introduced the DISCLOSE Act hold?",
+        "missing": [
+          "Chris Van Hollen"
+        ]
+      },
+      {
+        "id": "5a87ab905542996e4f3088c1",
+        "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+        "missing": [
+          "Androscoggin Bank Colisée"
+        ]
+      },
+      {
+        "id": "5a87d8215542994775f60800",
+        "question": "This American crime film set in South Los Angeles was written and directed by the same director and writer of screenwriter of \"Street Kings\", \"End of Watch\", \"Sabotage\", \"Fury\" and what other film? ",
+        "missing": [
+          "Harsh Times"
+        ]
+      }
+    ]
+  },
+  "hybrid 3:1+rerank": {
+    "recall@8": 0.877,
+    "mrr": 0.789,
+    "full_hit@8": 0.787,
+    "by_type_recall": {
+      "bridge": 0.852,
+      "comparison": 0.982
+    },
+    "failures": [
+      {
+        "id": "5a713ea95542994082a3e6e4",
+        "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+        "missing": [
+          "Indigenous peoples of Florida"
+        ]
+      },
+      {
+        "id": "5a722b8655429971e9dc9329",
+        "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+        "missing": [
+          "Lee Hazlewood"
+        ]
+      },
+      {
+        "id": "5a77c1505542997042120b1b",
+        "question": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+        "missing": [
+          "Chattahoochee (song)",
+          "We'll Burn That Bridge"
         ]
       },
       {
@@ -325,6 +484,13 @@
         "question": "What other political position did the person who introduced the DISCLOSE Act hold?",
         "missing": [
           "Chris Van Hollen"
+        ]
+      },
+      {
+        "id": "5a87ab905542996e4f3088c1",
+        "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+        "missing": [
+          "Androscoggin Bank Colisée"
         ]
       }
     ]

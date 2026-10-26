@@ -37,3 +37,9 @@ def test_mmr_limits_per_document():
 
 def test_mmr_empty():
     assert mmr_rerank([]) == []
+
+def test_rrf_weights_favor_heavier_list():
+    a = [hit(1, 1, "x"), hit(2, 2, "y")]
+    b = [hit(2, 2, "y"), hit(1, 1, "x")]
+    assert rrf_fuse([a, b], weights=[3.0, 1.0], top_n=2)[0].chunk_id == 1
+    assert rrf_fuse([a, b], weights=[1.0, 3.0], top_n=2)[0].chunk_id == 2

@@ -6,13 +6,21 @@ from app.db.connection import get_connection
 from app.retrieval.search import hybrid_search
 from eval.metrics import full_hit_at_k, recall_at_k, reciprocal_rank
 
-CONFIGS = {
-    "dense":          {"mode": "dense",  "rerank": False},
-    "bm25":           {"mode": "bm25",   "rerank": False},
-    "hybrid":         {"mode": "hybrid", "rerank": False},
-    "hybrid+rerank":  {"mode": "hybrid", "rerank": True},
-}
+# CONFIGS = {
+#     "dense":          {"mode": "dense",  "rerank": False},
+#     "bm25":           {"mode": "bm25",   "rerank": False},
+#     "hybrid":         {"mode": "hybrid", "rerank": False},
+#     "hybrid+rerank":  {"mode": "hybrid", "rerank": True},
+# }
 
+CONFIGS = {
+    "dense":              {"mode": "dense",  "rerank": False},
+    "bm25":               {"mode": "bm25",   "rerank": False},
+    "hybrid 1:1":         {"mode": "hybrid", "rerank": False},
+    "hybrid 2:1":         {"mode": "hybrid", "rerank": False, "dense_weight": 2.0, "bm25_weight": 1.0},
+    "hybrid 3:1":         {"mode": "hybrid", "rerank": False, "dense_weight": 3.0, "bm25_weight": 1.0},
+    "hybrid 3:1+rerank":  {"mode": "hybrid", "rerank": True,  "dense_weight": 3.0, "bm25_weight": 1.0},
+}
 
 def load_questions(conn, n: int) -> list[dict]:
     titles = {r[0] for r in conn.execute("SELECT title FROM documents").fetchall()}
