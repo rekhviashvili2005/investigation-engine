@@ -83,7 +83,7 @@ def hybrid_search(
     mode: str = "hybrid",     # "dense" | "bm25" | "hybrid"
     rerank: bool = True,
     pool: int = 30,
-    dense_weight: float = 1.0,
+    dense_weight: float = 3.0, #1.0
     bm25_weight: float = 1.0,
     exclude_titles: frozenset[str] | None = None,
 ) -> list[Hit]:
