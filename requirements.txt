@@ -12,3 +12,4 @@ streamlit
 pytest
 httpx
 google-genai
+python-multipart
