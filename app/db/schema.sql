@@ -35,3 +35,17 @@ CREATE TABLE IF NOT EXISTS eval_questions (
     supporting   JSONB NOT NULL DEFAULT '[]',   -- სწორი პარაგრაფების სათაურები
     source       TEXT NOT NULL DEFAULT 'hotpotqa'
 );
+
+
+
+CREATE TABLE IF NOT EXISTS chunks_fixed (
+    id            BIGSERIAL PRIMARY KEY,
+    document_id   BIGINT NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
+    chunk_index   INT NOT NULL,
+    content       TEXT NOT NULL,
+    embedding     vector(384),
+    UNIQUE (document_id, chunk_index)
+);
+
+CREATE INDEX IF NOT EXISTS chunks_fixed_embedding_idx
+    ON chunks_fixed USING hnsw (embedding vector_cosine_ops);
