@@ -1,0 +1,12 @@
+[
+  {"id": "pm1", "category": "single", "question": "What caused the Cloudflare outage on June 21, 2022?", "expected": "BGP", "supporting_doc_ids": [1765]},
+  {"id": "pm2", "category": "single", "question": "What caused the Cloudflare outage on July 17, 2020?", "expected": "BGP", "supporting_doc_ids": [1810]},
+  {"id": "pm3", "category": "single", "question": "Why did most Firefox add-ons stop working in 2019?", "expected": "certificate", "supporting_doc_ids": [1801, 1845]},
+  {"id": "pm4", "category": "single", "question": "What did Google SREs change on 12 March that overloaded the blob service?", "expected": "configuration", "supporting_doc_ids": [1798]},
+  {"id": "pm5", "category": "single", "question": "What triggered the GitHub Git database incident on May 9, 2023?", "expected": "configuration", "supporting_doc_ids": [1768]},
+  {"id": "pm6", "category": "single", "question": "How did Keepthescore lose its production database?", "expected": "function", "supporting_doc_ids": [1762]},
+  {"id": "pm7", "category": "multi_doc", "question": "Which two Cloudflare incidents were caused by BGP-related changes?", "expected": "2020", "supporting_doc_ids": [1765, 1810]},
+  {"id": "pm8", "category": "multi_doc", "question": "Which Mozilla posts describe the expired add-on signing certificate?", "expected": "certificate", "supporting_doc_ids": [1801, 1845]},
+  {"id": "pm9", "category": "unanswerable", "question": "What caused the Cloudflare outage on March 3, 2031?", "expected": null, "supporting_doc_ids": []},
+  {"id": "pm10", "category": "unanswerable", "question": "Which Oracle Cloud region failed in the 2023 outage?", "expected": null, "supporting_doc_ids": []}
+]
