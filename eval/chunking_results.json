@@ -1,0 +1,12 @@
+{
+  "sentence": {
+    "doc_recall": 0.812,
+    "any_hit": 1.0,
+    "chunks": 4509
+  },
+  "fixed": {
+    "doc_recall": 0.75,
+    "any_hit": 0.875,
+    "chunks": 2547
+  }
+}
