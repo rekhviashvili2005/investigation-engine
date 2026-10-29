@@ -1,8 +1,4 @@
-"""ეძებს სიტყვას/ფრაზას post-mortem დოკუმენტებში და აჩვენებს ამონარიდებს.
-გამოიყენე ფაქტების ხელით გადასამოწმებლად (eval კითხვების მოსალოდნელი პასუხებისთვის).
 
-გაშვება: python -m scripts.find_in_postmortems "regular expression" --max 8
-"""
 import argparse
 import re
 
@@ -35,7 +31,7 @@ def main() -> None:
             shown_docs += 1
             seen_docs[doc_id] = 0
             print(f"\n=== [{doc_id}] {title}\n    {source}")
-        if seen_docs[doc_id] >= 2:      # მაქს. 2 ამონარიდი დოკუმენტზე
+        if seen_docs[doc_id] >= 2:
             continue
         seen_docs[doc_id] += 1
         m = pattern.search(content)

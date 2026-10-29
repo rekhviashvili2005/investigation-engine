@@ -1,7 +1,3 @@
-"""fixed vs sentence chunking: document-level Recall@K (dense ძიება).
-
-გაშვება: python -m eval.chunking_eval --k 5
-"""
 import argparse
 import json
 from pathlib import Path

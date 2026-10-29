@@ -1,7 +1,3 @@
-"""ჩატვირთავს სინთეზურ დოკუმენტებს (ერთხელ) და ამოწმებს conflict-ის აღმოჩენას.
-
-გაშვება: python -m eval.conflict_eval
-"""
 import time
 
 from app.db.connection import get_connection

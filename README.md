@@ -4,8 +4,10 @@ Multi-hop RAG სისტემა დოკუმენტურ კოლე�
 აკავშირებს ფაქტებს, პასუხს ციტატებით აძლევს, აფიქსირებს ურთიერთგამომრიცხავ წყაროებს და
 არასაკმარისი მტკიცებულების დროს უარს ამბობს პასუხზე (ფაქტებს არ იგონებს).
 
-- **Live demo:** TODO (Render URL)
+- **Live demo:** https://investigation-engine.onrender.com/
 - **Repo:** https://github.com/rekhviashvili2005/investigation-engine
+- **Evaluation Report:** `docs/EVALUATION.md`
+- **AI Usage Report:** `docs/AI_USAGE.md`
 
 > Free tier-ის შენიშვნა: აპლიკაცია Render-ის უფასო ტარიფზეა და უმოქმედობისას იძინებს.
 > პირველი გახსნა ~1 წუთს შეიძლება გასტანდეს. პასუხი 0.1 CPU-ზე და LLM-ის რამდენიმე გამოძახების გამო
@@ -47,7 +49,7 @@ Multi-hop RAG სისტემა დოკუმენტურ კოლე�
 4. **Validate (ჩვენი კოდი):** არარსებული ციტატები იგდება; ციტატის გარეშე `answered` გადადის
    `insufficient_evidence`-ში; `conflict` აღწერის გარეშე არ მიიღება.
 5. **შეცდომები:** LLM კლიენტს აქვს retry ექსპონენციალური პაუზით (429/5xx), timeout, `LLMError`.
-6. **Prompt injection:** prompt-ში retrieved ტექსტი DATA-დ არის მონიშნული (ცალკე ტესტი ბონუსად TODO).
+6. **Prompt injection:** prompt-ში retrieved ტექსტი DATA-დ არის მონიშნული; ცალკე ტესტი ჯერ არ ჩატარებულა.
 
 ## საკუთარი ალგორითმები (არა მზა ბიბლიოთეკა)
 
@@ -84,21 +86,27 @@ REST API: `GET /health`, `GET/POST /documents`, `DELETE /documents/{id}`, `POST 
 ## Deployment
 
 Render Free Web Service (Docker, Oregon). საიდუმლოები (`DATABASE_URL`, `LLM_API_KEY`, `LLM_MODEL`)
-მხოლოდ Render Environment-ში; `.env` git-ში არასოდეს. მონაცემები Neon-შია (Render-ის დისკი დროებითია).
+მხოლოდ Render Environment-ში; `.env` git-ში არასოდეს. მონაცემები Neon-შია (Render-ის დისკი დროებითია,
+ამიტომ გადატვირთვის შემდეგ მონაცემები არ იკარგება).
 
 **უფასო ტარიფის შეზღუდვები:** 512 MB RAM, 0.1 CPU, ძილი უმოქმედობისას, Neon 1 GB, Gemini-ს
 მოთხოვნების ლიმიტი (retry ამუშავებს). დიდი ჩატვირთვა Colab-იდან კეთდება იმავე სკრიპტით.
 
 ## მონაცემები
 
-- HotpotQA (distractor, validation): TODO რაოდენობა ჩატვირთვის დასრულების შემდეგ (მიზანი 50k+ პარაგრაფი)
-- danluu post-mortems: 111 HTML დოკუმენტი
-- სინთეზური წინააღმდეგობრივი დოკუმენტები (`synthetic://`, გამოგონილი კომპანიები)
-- ატვირთვები: `upload://`
+ბაზაში სულ **34 349** დოკუმენტი:
+
+- HotpotQA (distractor, validation): **34 230** პარაგრაფი. მიზანი 50 000 იყო; უფასო Colab-ზე
+  ჩატვირთვა დროში შეზღუდულია, ამიტომ ეს რიცხვი ჩაბარების მომენტისთვისაა. სკრიპტი გაგრძელებადია
+  (`python -m scripts.load_hotpotqa --questions 5500` იძლევა 50k+ უნიკალურ პარაგრაფს)
+- danluu post-mortems: 111 HTML დოკუმენტი (3012 chunk)
+- სინთეზური წინააღმდეგობრივი დოკუმენტები: 6 (`synthetic://`, გამოგონილი კომპანიები)
+- ატვირთვები: 2 (`upload://`)
 
 ## შეფასება
 
-დეტალები: `docs/EVALUATION.md` (TODO). მოკლედ (1490 პარაგრაფიან ბაზაზე; 50k-ზე ხელახლა გასაზომია):
+დეტალები: `docs/EVALUATION.md`. რიცხვები გაზომილია 1490 პარაგრაფიან ბაზაზე; დიდ ბაზაზე
+ხელახლა გაზომვა ჯერ არ ჩატარებულა და recall სავარაუდოდ დაიკლებს.
 
 | Retrieval (150 კითხვა, K=8) | Recall@8 | MRR | Full hit |
 |---|---|---|---|
@@ -114,4 +122,6 @@ Conflict ტესტი: 3/3. Chunking (8 კითხვა): sentence doc_rec
 
 - eval ნაკრები პატარაა; სხვაობები ერთი კითხვის ფარგლებშია
 - `answer_correct` სტრიქონული შედარებაა
-- ჩატვირთვის დასრულებამდე რიცხვები 1490 პარაგრაფზეა
+- eval რიცხვები 1490 პარაგრაფზეა, არა მთლიან ბაზაზე
+- 50 000 დოკუმენტის მიზანი ჯერ არ არის სრულად შესრულებული
+- prompt injection-ის ცალკე ტესტი არ ჩატარებულა

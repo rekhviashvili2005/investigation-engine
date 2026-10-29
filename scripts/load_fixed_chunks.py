@@ -1,8 +1,3 @@
-"""post-mortem დოკუმენტებს fixed-size chunking-ით წერს ცალკე ცხრილში chunks_fixed.
-საჭიროა data/postmortems/*.html (Colab-ში ჯერ გაუშვი fetch_postmortems).
-
-გაშვება: python -m scripts.load_fixed_chunks
-"""
 import re
 from pathlib import Path
 
@@ -30,13 +25,13 @@ def main() -> None:
         with get_connection() as conn:
             row = conn.execute("SELECT id FROM documents WHERE source = %s", (source,)).fetchone()
             if row is None:
-                continue                      # ეს ფაილი ძირითად ბაზაში არ არის
+                continue
             doc_id = row[0]
             exists = conn.execute(
                 "SELECT 1 FROM chunks_fixed WHERE document_id = %s LIMIT 1", (doc_id,)
             ).fetchone()
             if exists:
-                continue                      # უკვე ჩატვირთულია
+                continue
         embeddings = embed_texts([c.text for c in chunks])
         with get_connection() as conn:
             for c, e in zip(chunks, embeddings):

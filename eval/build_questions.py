@@ -1,8 +1,3 @@
-"""eval/questions.json: 30 HotpotQA კითხვა (მარტივი / multi-hop / უპასუხო).
-განმეორებადია: ფიქსირებული seed, მხოლოდ სრულად დაფარული კითხვები.
-
-გაშვება: python -m eval.build_questions
-"""
 import json
 import random
 

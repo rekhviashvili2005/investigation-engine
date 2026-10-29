@@ -28,11 +28,11 @@ def main() -> None:
             doc = parse_file(f)[0]
             m = SRC_RE.search(f.read_text(encoding="utf-8", errors="replace")[:300])
             if m:
-                doc.source = f"postmortem://{m.group(1)}"   # რეალური URL წყაროდ
-            if len(doc.text) < 500:                          # ძალიან მოკლე/ცარიელი გვერდი
+                doc.source = f"postmortem://{m.group(1)}"
+            if len(doc.text) < 500:
                 stats["failed"] += 1
                 continue
-            with get_connection() as conn:                   # მოკლე კავშირი თითო დოკუმენტზე
+            with get_connection() as conn:
                 res = ingest_document(conn, doc, strategy=args.strategy)
             stats[res.status] += 1
             print(f"  {res.status:9} {res.chunks:3} chunks  {doc.title[:55]}")

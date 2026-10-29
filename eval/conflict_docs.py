@@ -1,9 +1,3 @@
-"""სინთეზური ინციდენტები წინააღმდეგობების ტესტისთვის.
-კომპანიები გამოგონილია (Zorvex, Quillon, Brannet), რომ რეალურ მონაცემებს არ აერიოს.
-source პრეფიქსი 'synthetic://' ცალკე ფილტრის საშუალებას გვაძლევს.
-"""
-
-# (title, source, text)
 DOCS = [
     # --- წინააღმდეგობა 1: Zorvex-ის ინციდენტის მიზეზი ---
     ("Zorvex payments outage, March 12 2024: engineering postmortem",

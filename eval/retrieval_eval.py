@@ -6,12 +6,6 @@ from app.db.connection import get_connection
 from app.retrieval.search import hybrid_search
 from eval.metrics import full_hit_at_k, recall_at_k, reciprocal_rank
 
-# CONFIGS = {
-#     "dense":          {"mode": "dense",  "rerank": False},
-#     "bm25":           {"mode": "bm25",   "rerank": False},
-#     "hybrid":         {"mode": "hybrid", "rerank": False},
-#     "hybrid+rerank":  {"mode": "hybrid", "rerank": True},
-# }
 
 CONFIGS = {
     "dense":              {"mode": "dense",  "rerank": False},

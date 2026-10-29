@@ -1,7 +1,3 @@
-"""danluu/post-mortems README -> ბმულები -> data/postmortems/*.html
-
-გაშვება: python -m scripts.fetch_postmortems --limit 120
-"""
 import argparse
 import hashlib
 import re
